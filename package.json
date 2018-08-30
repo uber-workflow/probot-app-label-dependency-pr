@@ -1,0 +1,39 @@
+{
+  "name": "probot-app-label-dependency-pr",
+  "version": "1.0.0",
+  "description": "GitHub App that adds the 'dependencies' label if dependencies are upgraded in package.json",
+  "author": "Alexander Smith <alexmsmithca@gmail.com>",
+  "contributors": [],
+  "repository": "https://github.com/uber-web/probot-app-label-dependency-pr.git",
+  "scripts": {
+    "start": "probot run ./index.js",
+    "test": "npm run lint && jest",
+    "jest": "jest",
+    "lint": "eslint .",
+    "fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "probot": "^7.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-plugin-prettier": "2.6.2",
+    "jest-cli": "^23.4.2",
+    "jest-environment-node": "^23.4.0",
+    "localtunnel": "1.9.0",
+    "prettier": "^1.14.1",
+    "smee-client": "^1.0.2"
+  },
+  "jest": {
+    "cache": false,
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "testRegex": ".*/__tests__/.*.test.js$"
+  },
+  "engines": {
+    "node": ">= 8.9.0"
+  },
+  "license": "MIT"
+}
