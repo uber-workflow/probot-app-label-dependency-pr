@@ -19,7 +19,7 @@ module.exports = robot => {
     // set status to pending while checks happen
     setStatus(context, {
       state: 'pending',
-      description: `Checking whether to apply or remove 'dependencies' label`,
+      description: `Checking whether to apply or remove dependencies and infra labels`,
     });
 
     async function getFileFromRef(filePath, ref, transform) {
