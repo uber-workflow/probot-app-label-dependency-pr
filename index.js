@@ -53,7 +53,7 @@ module.exports = robot => {
         } else {
           await context.github.issues.removeLabel(
             context.issue({
-              name: 'dependencies',
+              name: label,
             }),
           );
         }
@@ -64,12 +64,12 @@ module.exports = robot => {
       }
     }
 
-    async function isDevDependenciesChange(baseJson, headJson) {
-      return deepEqual(baseJson.devDependencies, headJson.devDependencies);
+    function isDevDependenciesChange(baseJson, headJson) {
+      return !deepEqual(baseJson.devDependencies, headJson.devDependencies);
     }
 
-    async function isDependenciesChange(baseJson, headJson) {
-      return deepEqual(baseJson.dependencies, headJson.dependencies);
+    function isDependenciesChange(baseJson, headJson) {
+      return !deepEqual(baseJson.dependencies, headJson.dependencies);
     }
 
     const changes = await getChangedJsonFile('package.json');
