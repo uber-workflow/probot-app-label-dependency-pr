@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "some-dependency": "1.0.0",
+    "another-dependency": "~3.0.0"
+  },
+  "devDependencies": {
+    "some-dev-dependency": "1.0.0",
+    "another-dev-dependency": "^3.0.0"
+  }
+}

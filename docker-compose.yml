@@ -1,0 +1,7 @@
+version: '2'
+services:
+  probot-app-label-dependency-pr:
+    build: .
+    volumes:
+      - .:/probot-app-label-dependency-pr
+      - /probot-app-label-dependency-pr/node_modules/
