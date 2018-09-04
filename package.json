@@ -1,6 +1,6 @@
 {
   "name": "probot-app-label-dependency-pr",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "GitHub App that adds the dependency-related labels ('dependencies' and 'infra') if dependencies are upgraded in package.json",
   "author": "Alexander Smith <alexmsmithca@gmail.com>",
   "contributors": [],
