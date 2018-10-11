@@ -21,7 +21,7 @@
     "eslint-plugin-prettier": "2.6.2",
     "jest-cli": "^23.4.2",
     "jest-environment-node": "^23.4.0",
-    "localtunnel": "1.9.0",
+    "localtunnel": "1.9.1",
     "prettier": "^1.14.1",
     "smee-client": "^1.0.2"
   },
