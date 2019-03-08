@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "fast-deep-equal": "^2.0.1",
-    "probot": "^7.0.1"
+    "probot": "^9.0.0"
   },
   "devDependencies": {
     "eslint": "^5.3.0",
